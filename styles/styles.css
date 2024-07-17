@@ -1,0 +1,125 @@
+/* importing fonts from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slant" 0;
+}
+
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* universal styles */
+:root {
+    --primary-color: #E6533C;
+}
+
+html {
+    font-size: 62.5%; 
+    /* 1 rem = 10px; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #191919;
+}
+
+@media screen and (min-width: 993px) {
+    .navbar {
+        padding: 1.5rem 20rem;
+    }
+
+    .navbar__child3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+    .navbar__child3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+
+    .navbar__child2 {
+        display: none;
+    }
+    
+    .navbar__child3 {
+        display: block;
+        color: white;
+        font-size: 3rem;
+    }
+}
+
+.navbar-header {
+    color: var(--primary-color);
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
+.navbar__child2 {
+    border: 2px solid #4f4c4c;
+    border-radius: 2.5rem;
+
+}
+
+.navbar__child2 ul {
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0;
+    margin: 0;
+    padding: 0.4rem 1rem 0.4rem .6rem;
+}
+
+.navbar__child2 li:not(:last-child) {
+    list-style: none;
+    margin-right: 3rem;
+}
+
+.nav-button {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    padding: 0.7rem 2rem;
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-button-secondary {
+    background-color: #191919;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
