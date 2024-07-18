@@ -565,5 +565,110 @@ background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
 
+/* Run extra mile section */
 
+.run-extra-mile {
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40rem;
+    padding: 0 7rem;
+    margin: 12rem 0 5rem 0;
+    border-radius: 3rem;
+}
 
+.run-extra-mile__child1 {
+    padding-bottom: 5rem;
+    flex-shrink: 1;
+}
+.run-extra-mile__title {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    flex-shrink: 1;
+}
+
+.run-extra-mile__text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    width: 45rem;
+    padding-bottom: 2rem;
+    flex-shrink: 2;
+}
+
+.run-extra-mile__image {
+    width: 366px;
+    height: 312px;
+    border-radius: 2rem;
+    flex-shrink: 2;
+}
+
+.run-extra-mile__button {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border: transparent;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+/* Responsive run extra mile section */
+
+@media screen and (max-width: 576px) {
+    .run-extra-mile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        
+    }
+
+    .run-extra-mile__button {
+    width: 44rem;
+}
+
+    .run-extra-mile__child1 {
+        padding: 0 4rem;
+    }
+
+    .run-extra-mile__title {
+    text-align: left;
+}
+
+    .run-extra-mile__image {
+    margin: 3rem 0;
+    width: 435px;
+    height: 312px;
+    border-radius: 2rem;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .run-extra-mile {
+        padding: 0 2rem;
+    }
+    .run-extra-mile__image {
+    width: 266px;
+    height: 312px;
+    border-radius: 2rem;
+}
+
+.run-extra-mile__title {
+    font-size: 38px;
+
+}
+
+.run-extra-mile__text {
+    font-size: 12px;
+    max-width: 25rem;
+    flex-shrink: 2;
+}
+}
+
+@media screen and (min-width: 993px) {
+    
+}
