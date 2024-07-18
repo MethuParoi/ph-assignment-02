@@ -18,6 +18,11 @@
   font-style: normal;
 }
 
+    /* width: 100vw; 
+    max-width: 100vw; 
+    margin-left: calc(-50vw + 50%); 
+    margin-right: calc(-50vw + 50%);  */
+
 /* universal styles */
 :root {
     --primary-color: #E6533C;
@@ -35,6 +40,48 @@ body {
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    background: linear-gradient(to right, #191919, #232323);
+}
+
+/* adjusting margin-x of whole webpage */
+
+@media screen and (max-width: 576px) {
+    .main {
+        /* max-width: 900px; */
+        padding: 1rem 4rem;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .main {
+        /* max-width: 900px; */
+        padding: 1rem 4rem;
+    }
+}
+@media screen and (min-width: 993px) {
+.main {
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 990px; 
+}
+}
+
+@media screen and (min-width: 1200px) {
+.main {
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1100px; 
+}
+}
+
+@media screen and (min-width: 1500px) {
+.main {
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1400px; 
+}
 }
 
 /* navbar */
@@ -43,23 +90,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #191919;
 }
 
 @media screen and (min-width: 993px) {
-    .navbar {
-        padding: 1.5rem 20rem;
-    }
-
     .navbar__child3 {
         display: none;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .navbar {
-        padding: 1.5rem 2rem;
-    }
     .navbar__child3 {
         display: none;
     }
@@ -67,7 +106,7 @@ body {
 
 @media screen and (max-width: 576px) {
     .navbar {
-        padding: 1.5rem 2rem;
+        /* padding: 1.5rem 2rem; */
     }
 
     .navbar__child2 {
@@ -122,4 +161,264 @@ body {
     border: none;
     color: rgb(255, 255, 255);
     font-size: 2rem;
+}
+
+/* hero layout styles */
+
+.hero {
+    height: 65dvh;
+    margin-top: 0;
+    
+}
+
+.hero__child1 {
+    width: 50%;
+}
+
+.hero__header {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 7.8rem;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.font-special {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7.8rem;
+    font-weight: 700;
+}
+
+.hero__paragraph {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+    
+}
+
+.hero__button1 {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border: transparent;
+    border-radius: 3rem;
+}
+
+.hero__button2 {
+    background-color: #191919;
+    color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border: 2px solid rgb(255, 255, 255);;
+    border-radius: 3rem;
+    margin-left: 2rem;
+}
+
+/* hero image section */
+
+.hero__child2 {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.hero-image {
+    position: absolute;
+    right: 16rem;
+    top: 0rem;
+}
+
+.hero-image {
+    height: 100%;
+}
+
+/* glass card */
+
+.glass-container1 {
+position: absolute;
+top: 37rem;
+background: linear-gradient(
+);
+90deg,
+rgba(2, 0, 36, 1) 0%,
+rgba(95, 9, 121, 1) 50%,
+rgba(239, 0, 255, 1) 100%
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.glass-container2 {
+position: absolute;
+top: 12rem;
+right: 24rem;
+background: linear-gradient(
+);
+90deg,
+rgba(2, 0, 36, 1) 0%,
+rgba(95, 9, 121, 1) 50%,
+rgba(239, 0, 255, 1) 100%
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.glass1 {
+position: absolute;
+height: 10rem;
+width: 22rem;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+display: flex;
+align-items: center;
+justify-content: space-around; 
+}
+
+.glass1__child1 {
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.glass1-title {
+    color: rgb(250, 250, 249);
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.glass1-text {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 16px;
+    text-align: left;
+}
+
+.glass2 {
+position: absolute;
+height: 10rem;
+width: 22rem;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+}
+
+.glass2-title {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: left;
+    margin: 0;
+    padding: 1rem 0 0 2.5rem;
+}
+
+.glass2-text {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1.5rem;
+    text-align: left;
+    padding: .5rem 0 2rem 2.5rem;
+    margin: 0;
+}
+
+/* Responsive hero section */
+@media screen and (min-width: 993px) {
+    .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__child1 {
+        width: 100%;
+    }
+
+    .hero__child2 {
+        /* display: block; */
+        width: 100%;
+        height: 100%;
+        position: relative; 
+    }
+
+    .hero-image {
+    position: absolute;
+    right: 20rem;
+    top: 10rem;
+}
+
+    .glass-container1 {
+    position: absolute;
+    top: 47rem;
+    left: 20rem;
+    
+}
+
+.glass-container2 {
+    position: absolute;
+    top: 12rem;
+    left: 50rem;
+}
+}
+
+@media screen and (max-width: 576px)  {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__child1 {
+        width: 100%;
+    }
+
+    .hero__header {
+        font-size: 5rem;
+    }
+
+    .hero__paragraph {
+        font-size: 1.2rem;
+    }
+
+    .hero__button-parent {
+        margin-top: 2rem;
+    }
+
+    .hero__child2 {
+        width: 100%;
+    }
+
+    .hero__button1 {
+        width: 15rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+
+    .hero__button2 {
+        width: 15rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+
+       .hero-image {
+    position: absolute;
+    right: 9rem;
+    top: 10rem;
+}
+
 }
