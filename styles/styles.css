@@ -124,6 +124,7 @@ body {
     color: var(--primary-color);
     font-size: 3.6rem;
     font-weight: 800;
+    font-style: italic;
 }
 
 .navbar__child2 {
@@ -1021,13 +1022,124 @@ background: rgba(255, 255, 255, 0.1);
     background-color: #1A1A1A;
 }
 
-.footer {}
+.footer {
+    padding: 3rem 0;
+    display: grid;
+}
 
 .footer__child1 {
-    padding: 5rem 0;
+    /* padding: 5rem 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+}
+
+.footer__title {
+    color: var(--primary-color);
+    font-size: 7rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.footer__text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    max-width: 50rem;
+}
+
+.footer__list-title {
+    color: rgb(255, 255, 255);
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.footer__link {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.8rem;
+}
+
+.footer__list {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.footer__list li {
+    margin-top: 2rem;
+}
+
+.footer__list a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 993px) {
+   .footer {
+        grid-template-columns: repeat(1, minmax(40rem, 2fr)) repeat(2, minmax(20rem, 1fr));
+        gap: 2rem;
+        align-items: start;
+        justify-items: space-evenly;
+        margin-top: 10rem;
+        min-height: 35rem;
+   }
+
+   .footer__child2 {
+        margin-top: 3rem;
+        justify-self: center;
+   }
+
+   .footer__child3 {
+        margin-top: 3rem;
+        justify-self: self-end;
+   }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+   .footer {
+        grid-template-columns: repeat(2, minmax(30rem, 1fr));
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "first-row first-row"
+        "second-row-1 second-row-2"; 
+        gap: 2rem;
+        margin-top: 10rem;
+        min-height: 35rem;
+   }
+
+   .footer__child1 {
+        grid-area: first-row;
+   }
+
+   .footer__child2 {
+        grid-area: second-row-1;
+        margin-top: 3rem;
+   }
+
+   .footer__child3 {
+        grid-area: second-row-2;
+        margin-top: 3rem;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .footer {
+    margin-top: 10rem;
+   }
+
+   .footer__list-title {
+        font-size: 2.8rem;
+        margin-bottom: 2.5rem;
+   }
 }
 
 
+/* Copyright section */
+
+.copyright {
+    border-top: 2px solid #313131;
+}
+
+.copy-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
