@@ -157,7 +157,97 @@
                         <img class="run-extra-mile__image" src="./images/run.jpg" alt="run extra mile">
                     </div>
                 </div>
+
+                <!-- BMI Header -->
+                <div class="bmi-child1">
+                    <h1 class="bmi__title">BMI Calculator</h1>
+
+                    <p class="bmi__text">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                </div>
             </div>
         </div>
+
+            <!-- BMI Calculator section -->
+
+        <div class="bmi-parent">
+            <div class="bmi mx-auto">
+            <div class="bmi-child2">
+                <div class="bmi__chart">
+                    <h1 class="bmi__chart--title">BMI Calculator Chart</h1>
+
+                    <table class="bmi--table">
+                        <thead>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 - and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bmi__calculator">
+                    <h1 class="bmi__calculator--title">Calculate your BMI</h1>
+
+                    <p class="bmi__calculator--text">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+
+                    <div class="bmi__calculator--grid">
+                        <div class="grid-child1">
+                            <input class="bmi--input bmi--fields" type="text"
+                            placeholder="Height/cm">
+                        </div>
+
+                        <div class="grid-child2">
+                            <input class="bmi--input bmi--fields" type="text"
+                            placeholder="Weight/kg">
+                        </div>
+
+                        <div class="grid-child3">
+                            <input class="bmi--input bmi--fields" type="text"
+                            placeholder="Age">
+                        </div>
+
+                        <div class="grid-child4">
+                            <select class="dropdown-bar bar1 bmi--fields">
+                                <option value="" disabled selected>Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="grid-child5">
+                            <select class="dropdown-bar bar2 bmi--fields">
+                                <option value="" disabled selected>Select an activity factor</option>
+                                <option value="male">Walking</option>
+                                <option value="female">Free hand exercise</option>
+                                <option value="other">Heavy exercise</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="run-extra-mile__button bmi-button">Calculate</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
 </body>
 </html>
