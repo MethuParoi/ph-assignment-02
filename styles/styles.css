@@ -925,4 +925,109 @@ background: rgba(255, 255, 255, 0.1);
     }
 }
 
+/* Meet our team section */
+
+.meet-our-team {}
+
+.team__title {
+    color: rgb(255, 255, 255);
+    font-size: 4.8rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.team__text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.team-grid-element {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.trainer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    
+}
+
+.image--child {
+    position: absolute;
+    top: 24rem;
+    left: 2rem;
+}
+
+.image--title {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: .5rem;
+}
+
+.image--text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+}
+
+.team-child2 {
+    margin-top: 8rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    background-color: #1A1A1A;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 993px) {
+   .team-child2 {
+        grid-template-columns: repeat(3, minmax(20rem, 1fr));
+        grid-template-rows: repeat(2, minmax(20rem, 1fr));
+        gap: 2.5rem;
+        height: 68rem;
+    } 
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .team-child2 {
+        grid-template-columns: repeat(3, minmax(14rem, 1fr));
+        grid-template-rows: repeat(2, minmax(20rem, 1fr));
+        gap: 2.5rem;
+        height: 68rem;
+    } 
+}
+
+@media screen and (max-width: 576px) {
+    .team-child2 {
+        grid-template-columns: repeat(1, minmax(14rem, 1fr));
+        grid-template-rows: repeat(6, minmax(20rem, 1fr));
+        gap: 2.5rem;
+        min-height: 68rem;
+    } 
+}
+
+/* Footer section */
+
+.footer-parent {
+    background-color: #1A1A1A;
+}
+
+.footer {}
+
+.footer__child1 {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
