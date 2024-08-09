@@ -652,7 +652,8 @@ background: rgba(255, 255, 255, 0.1);
     .habit-child2 {
         grid-template-columns: repeat(4, 1fr);
         justify-content: stretch;
-        padding-left: 7rem;
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -754,21 +755,30 @@ background: rgba(255, 255, 255, 0.1);
         
     }
 
-    .run-extra-mile__button {
-    width: 44rem;
-}
-
     .run-extra-mile__child1 {
         padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
+    .run-extra-mile__button {
+    width: 40rem;
+}
+    .run-extra-mile__text {
+        max-width: 40rem;
+    }
+    
+
     .run-extra-mile__title {
-    text-align: left;
+    align-self: flex-start;
 }
 
     .run-extra-mile__image {
     margin: 3rem 0;
-    width: 435px;
+    width: 400px;
     height: 312px;
     border-radius: 2rem;
 }
@@ -969,7 +979,43 @@ background: rgba(255, 255, 255, 0.1);
 
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .bmi {
+        overflow: hidden; 
+        min-height: 50rem;
+    }
+
+    .bmi__calculator--grid {
+        margin-left: 1rem;
+    }
+
+    .bmi__calculator--title {
+        margin-left: 1rem;
+    }
+
+    .bmi__calculator--text {
+        margin-left: 1rem;
+    }
+
+    .bmi--input {
+        width: 20.2rem;
+    }
+
+    .bar1 {  
+        max-width: 24.2rem;
+    
+    }
+
+    .bar2 {  
+        max-width: 100%;
+    
+    }
+
+    .dropdown-bar bar2 {}
+
+}
+@media screen and (min-width: 1300px) {
     .bmi {
         overflow: hidden; 
         min-height: 50rem;
