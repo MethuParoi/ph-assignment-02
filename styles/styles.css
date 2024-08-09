@@ -1139,6 +1139,122 @@ background: rgba(255, 255, 255, 0.1);
     } 
 }
 
+/* Clients feedback section */
+.client-feedback {
+    margin: 10rem 0 2rem 0;
+
+}
+/* grid layout */
+.feedback__child-2 {
+    display: grid;
+}
+
+@media screen and (min-width: 993px) {
+    .feedback__child-2 {
+        grid-template-columns:  repeat(3, minmax(20rem, 1fr));
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .feedback__child-2 {
+        grid-template-columns:  repeat(2, minmax(20rem, 1fr));
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        margin-top: 8rem;
+
+    }
+
+    .rating-img {
+    width: 3rem;
+}
+}
+
+@media screen and (max-width: 576px) {
+    .feedback__child-2 {
+        grid-template-columns:  repeat(1, minmax(20rem, 1fr));
+        align-items: center;
+        justify-items: center;
+        row-gap: 3rem;
+        margin-top: 5rem;
+    }
+}
+
+.feedback__card {
+    background-color: #1A1A1A;
+    max-width: 40rem;
+    min-height: 50rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback__title {
+    color: rgb(255, 255, 255);
+    font-size: 4.8rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.feedback__card--text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2.8rem;
+}
+
+.clamped-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* Number of lines to clamp */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rating-img {
+    width: 4rem;
+    margin-right: .5rem;
+}
+
+.feedback__card--section02 {
+    margin: 4.5rem 0;
+}
+
+.feedback__card--section03 {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.feedback-img {
+    height: 6rem;
+    width: 6rem;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+
+.feedback-user h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2 rem;
+    font-weight: 500;
+    text-align: center;
+}
+
 /* Footer section */
 
 .footer-parent {
