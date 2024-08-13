@@ -55,7 +55,7 @@ body {
 @media screen and (max-width: 576px) {
     .main {
         /* max-width: 900px; */
-        padding: 1rem 4rem;
+        padding: 1rem 2rem;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -179,20 +179,6 @@ body {
 
 /* hero layout styles */
 
-    
-/* .hero {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem; 
-    flex-wrap: wrap;
-} */
-/* 
-.hero__child1 {
-    width: 50%;
-} */
 
 .hero__header {
     margin-top: 0;
@@ -238,6 +224,29 @@ body {
     border: 2px solid rgb(255, 255, 255);;
     border-radius: 3rem;
     margin-left: 2rem;
+}
+
+@media screen and (max-width: 410px) {
+    .hero__button1 {
+    width: 8rem;
+    height: 5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    border: transparent;
+    border-radius: 3rem;
+}
+
+.hero__button2 {
+    background-color: #191919;
+    color: rgb(255, 255, 255);
+    width: 8rem;
+    height: 5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    border: 2px solid rgb(255, 255, 255);;
+    border-radius: 3rem;
+    margin-left: .5rem;
+}
 }
 
 /* hero image section */
@@ -1341,6 +1350,18 @@ background: rgba(255, 255, 255, 0.1);
     }
 
     
+}
+@media screen and (max-width: 992px) {
+    .bmi__title {
+        color: rgb(255, 255, 255);
+        font-weight: 900;
+        text-align: left;
+    }
+
+    .bmi__text {
+        color: rgba(255, 255, 255, 0.5);
+        text-align: left;
+    }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .bmi__calculator {
